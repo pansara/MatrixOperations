@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace CodingAssessment
 {
@@ -185,6 +185,16 @@ namespace CodingAssessment
                 {
                     matrix[i, j] = Convert.ToDouble(Console.ReadLine());
                 }
+            }
+
+            Console.WriteLine("Matrix{0} is:\n", n);
+            for (int i = 0; i < row; i++)
+            {
+                for (int j = 0; j < col; j++)
+                {
+                    Console.Write(matrix[i, j] + "\t");
+                }
+                Console.WriteLine();
             }
             return matrix;
         }
